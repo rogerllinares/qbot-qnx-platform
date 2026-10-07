@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 790" width="1020" height="790">
+  <style>
+
+  text { font-family: Arial, Helvetica, sans-serif; fill: #1a1a1a; }
+  .tb { font-size: 17px; font-weight: bold; }
+  .s  { font-size: 15px; fill: #4a4a4a; }
+  .xs { font-size: 13px; fill: #4a4a4a; }
+  .m  { font-family: "Courier New", Courier, monospace; font-size: 15px; }
+  .mb { font-family: "Courier New", Courier, monospace; font-size: 17px; font-weight: bold; }
+  .ms { font-family: "Courier New", Courier, monospace; font-size: 14px; }
+  .ac { fill: #1f4e79; }
+  .num { font-size: 26px; font-weight: bold; fill: #1f4e79; }
+  .box  { fill: #ffffff; stroke: #333333; stroke-width: 1.4; }
+  .boxa { fill: #eaf0f6; stroke: #1f4e79; stroke-width: 1.4; }
+  .boxg { fill: #f4f4f4; stroke: #333333; stroke-width: 1.4; }
+  .reg  { fill: none; stroke: #9aa5b1; stroke-width: 1.2; stroke-dasharray: 6 5; }
+  .ln   { stroke: #333333; stroke-width: 1.4; fill: none; }
+  .lna  { stroke: #1f4e79; stroke-width: 2.2; fill: none; }
+  .lnd  { stroke: #9aa5b1; stroke-width: 1.1; fill: none; stroke-dasharray: 5 5; }
+  .thin { stroke: #666666; stroke-width: 1; fill: none; }
+  </style>
+  <rect x="0" y="0" width="1020" height="790" fill="#ffffff"></rect>
+  <defs>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333333"></path>
+    </marker>
+    <marker id="arwa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f4e79"></path>
+    </marker>
+    <marker id="arwg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9aa5b1"></path>
+    </marker>
+    <marker id="tk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 5 1 L 5 9" stroke="#666666" stroke-width="1.2"></path>
+    </marker>
+  </defs>
+  <rect class="reg" x="30" y="34" width="520" height="730" rx="4"></rect>
+  <text class="s" x="290" y="746" text-anchor="middle">qualsevol estat</text>
+  <circle cx="215" cy="20" r="5" fill="#333333"></circle>
+  <path class="ln" d="M 215 26 L 215 56" marker-end="url(#arw)"></path>
+  <rect class="box" x="90" y="60" width="250" height="60" rx="8"></rect>
+  <text class="mb" x="108" y="86">IDLE</text>
+  <text class="s" x="108" y="108">quiet, esperant l'arrencada</text>
+  <rect class="box" x="90" y="210" width="250" height="60" rx="8"></rect>
+  <text class="mb" x="108" y="236">FORWARD</text>
+  <text class="s" x="108" y="258">recta a 0,22 m/s</text>
+  <rect class="box" x="90" y="360" width="250" height="60" rx="8"></rect>
+  <text class="mb" x="108" y="386">ORIENT_ENTRADA</text>
+  <text class="s" x="108" y="408">gir de 90° sobre el lloc</text>
+  <rect class="box" x="90" y="510" width="250" height="60" rx="8"></rect>
+  <text class="mb" x="108" y="536">AVOID</text>
+  <text class="s" x="108" y="558">arc de 180°, radi 0,60 m</text>
+  <rect class="box" x="90" y="660" width="250" height="60" rx="8"></rect>
+  <text class="mb" x="108" y="686">ORIENT_SORTIDA</text>
+  <text class="s" x="108" y="708">gir de 90° sobre el lloc</text>
+  <path class="ln" d="M 215 120 L 215 206" marker-end="url(#arw)"></path>
+  <text class="m"  x="232" y="144">EV_ENGEGA</text>
+  <text class="ms" x="232" y="166">setRobotVelocity(0,22 · 0)</text>
+  <text class="xs" x="232" y="188">Monitor: distància 0,60 m</text>
+  <path class="ln" d="M 215 270 L 215 356" marker-end="url(#arw)"></path>
+  <text class="m"  x="232" y="294">EV_OBSTACLE</text>
+  <text class="ms" x="232" y="316">setRobotVelocity(0 · +1,10)</text>
+  <text class="xs" x="232" y="338">Monitor: angle +1,571 rad</text>
+  <path class="ln" d="M 215 420 L 215 506" marker-end="url(#arw)"></path>
+  <text class="m"  x="232" y="444">EV_FI_GIR</text>
+  <text class="ms" x="232" y="466">setRobotVelocity(0,22 · −0,367)</text>
+  <text class="xs" x="232" y="488">Monitor: angle −3,142 rad</text>
+  <path class="ln" d="M 215 570 L 215 656" marker-end="url(#arw)"></path>
+  <text class="m"  x="232" y="594">EV_FI_GIR</text>
+  <text class="ms" x="232" y="616">setRobotVelocity(0 · +1,10)</text>
+  <text class="xs" x="232" y="638">Monitor: angle +1,571 rad</text>
+  <path class="ln" d="M 90 690 L 60 690 L 60 240 L 90 240" marker-end="url(#arw)"></path>
+  <text class="m"  x="344" y="676">EV_FI_GIR</text>
+  <text class="xs" x="344" y="698">setRobotVelocity(0,22 · 0)</text>
+  <path class="lna" d="M 554 430 L 756 430" marker-end="url(#arwa)"></path>
+  <text class="m ac" x="655" y="412" text-anchor="middle">BATERIA_BAIXA</text>
+  <text class="ms" x="655" y="452" text-anchor="middle">setRobotVelocity(0, 0)</text>
+  <rect class="boxa" x="760" y="395" width="240" height="70" rx="8"></rect>
+  <text class="mb" x="776" y="428">SHUTDOWN</text>
+  <text class="s"  x="776" y="450">aturat, estat terminal</text>
+</svg>

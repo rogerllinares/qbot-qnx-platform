@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="1000" height="480">
+  <style>
+
+  text { font-family: Arial, Helvetica, sans-serif; fill: #1a1a1a; }
+  .tb { font-size: 17px; font-weight: bold; }
+  .s  { font-size: 15px; fill: #4a4a4a; }
+  .xs { font-size: 13px; fill: #4a4a4a; }
+  .m  { font-family: "Courier New", Courier, monospace; font-size: 15px; }
+  .mb { font-family: "Courier New", Courier, monospace; font-size: 17px; font-weight: bold; }
+  .ms { font-family: "Courier New", Courier, monospace; font-size: 14px; }
+  .ac { fill: #1f4e79; }
+  .num { font-size: 26px; font-weight: bold; fill: #1f4e79; }
+  .box  { fill: #ffffff; stroke: #333333; stroke-width: 1.4; }
+  .boxa { fill: #eaf0f6; stroke: #1f4e79; stroke-width: 1.4; }
+  .boxg { fill: #f4f4f4; stroke: #333333; stroke-width: 1.4; }
+  .reg  { fill: none; stroke: #9aa5b1; stroke-width: 1.2; stroke-dasharray: 6 5; }
+  .ln   { stroke: #333333; stroke-width: 1.4; fill: none; }
+  .lna  { stroke: #1f4e79; stroke-width: 2.2; fill: none; }
+  .lnd  { stroke: #9aa5b1; stroke-width: 1.1; fill: none; stroke-dasharray: 5 5; }
+  .thin { stroke: #666666; stroke-width: 1; fill: none; }
+  </style>
+  <rect x="0" y="0" width="1000" height="480" fill="#ffffff"></rect>
+  <defs>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333333"></path>
+    </marker>
+    <marker id="arwa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f4e79"></path>
+    </marker>
+    <marker id="arwg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9aa5b1"></path>
+    </marker>
+    <marker id="tk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 5 1 L 5 9" stroke="#666666" stroke-width="1.2"></path>
+    </marker>
+  </defs>
+
+  <rect class="box" x="20" y="40" width="560" height="112" rx="3"></rect>
+  <text class="tb" x="40" y="70">Aplicació</text>
+  <text class="m"  x="40" y="96">QBot_P4.c · QBot_Platform.c</text>
+  <text class="s"  x="40" y="120">política de control, registre, reacció als esdeveniments</text>
+  <text class="s"  x="40" y="142">coneix només apibasica.h</text>
+  <path class="ln" d="M 300 152 L 300 186" marker-end="url(#arw)"></path>
+  <text class="s" x="316" y="176">depèn de</text>
+
+  <rect class="boxa" x="20" y="190" width="560" height="112" rx="3"></rect>
+  <text class="tb" x="40" y="220">Interfície pública</text>
+  <text class="m"  x="40" y="246">apibasica.h · apibasica1.c</text>
+  <text class="s"  x="40" y="270">estat coherent, consignes, cinemàtica, odometria, esdeveniments</text>
+  <text class="s"  x="40" y="292">coneix el protocol i el socket</text>
+  <path class="ln" d="M 300 302 L 300 336" marker-end="url(#arw)"></path>
+  <text class="s" x="316" y="326">depèn de</text>
+
+  <rect class="boxg" x="20" y="340" width="560" height="100" rx="3"></rect>
+  <text class="tb" x="40" y="370">Transport</text>
+  <text class="m"  x="40" y="396">socket TCP, dins d'apibasica1.c</text>
+  <text class="s"  x="40" y="420">trames de 10 i de 17 valors de doble precisió</text>
+
+  <text class="s" x="678" y="32" text-anchor="middle">prioritat</text>
+  <rect class="boxa" x="650" y="40" width="56" height="100" rx="3"></rect>
+  <text class="num" x="678" y="99" text-anchor="middle">50</text>
+  <rect class="box" x="706" y="40" width="274" height="100" rx="3"></rect>
+  <text class="tb" x="724" y="70">Fil intern</text>
+  <text class="m"  x="724" y="96">actualitzarVariables</text>
+  <text class="s"  x="724" y="120">biblioteca · aperiòdic</text>
+  <path class="lna" d="M 678 140 L 678 186" marker-end="url(#arwa)"></path>
+
+  <rect class="boxa" x="650" y="190" width="56" height="100" rx="3"></rect>
+  <text class="num" x="678" y="249" text-anchor="middle">25</text>
+  <rect class="box" x="706" y="190" width="274" height="100" rx="3"></rect>
+  <text class="tb" x="724" y="220">Supervisor</text>
+  <text class="s"  x="724" y="244">aplicació · aperiòdic</text>
+  <text class="s"  x="724" y="266">bloquejat a la cua</text>
+  <path class="lna" d="M 678 290 L 678 336" marker-end="url(#arwa)"></path>
+
+  <rect class="boxa" x="650" y="340" width="56" height="100" rx="3"></rect>
+  <text class="num" x="678" y="399" text-anchor="middle">15</text>
+  <rect class="box" x="706" y="340" width="274" height="100" rx="3"></rect>
+  <text class="tb" x="724" y="370">Monitor</text>
+  <text class="s"  x="724" y="394">aplicació · periòdic</text>
+  <text class="s"  x="724" y="416">període de 50 ms</text>
+</svg>

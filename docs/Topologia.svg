@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="280 40 830 430" width="830" height="430">
+  <style>
+
+  text { font-family: Arial, Helvetica, sans-serif; fill: #1a1a1a; }
+  .tb { font-size: 17px; font-weight: bold; }
+  .s  { font-size: 15px; fill: #4a4a4a; }
+  .xs { font-size: 13px; fill: #4a4a4a; }
+  .m  { font-family: "Courier New", Courier, monospace; font-size: 15px; }
+  .mb { font-family: "Courier New", Courier, monospace; font-size: 17px; font-weight: bold; }
+  .ms { font-family: "Courier New", Courier, monospace; font-size: 14px; }
+  .ac { fill: #1f4e79; }
+  .num { font-size: 26px; font-weight: bold; fill: #1f4e79; }
+  .box  { fill: #ffffff; stroke: #333333; stroke-width: 1.4; }
+  .boxa { fill: #eaf0f6; stroke: #1f4e79; stroke-width: 1.4; }
+  .boxg { fill: #f4f4f4; stroke: #333333; stroke-width: 1.4; }
+  .reg  { fill: none; stroke: #9aa5b1; stroke-width: 1.2; stroke-dasharray: 6 5; }
+  .ln   { stroke: #333333; stroke-width: 1.4; fill: none; }
+  .lna  { stroke: #1f4e79; stroke-width: 2.2; fill: none; }
+  .lnd  { stroke: #9aa5b1; stroke-width: 1.1; fill: none; stroke-dasharray: 5 5; }
+  .thin { stroke: #666666; stroke-width: 1; fill: none; }
+  </style>
+  <rect x="280" y="0" width="830" height="430" fill="#ffffff"></rect>
+  <defs>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333333"></path>
+    </marker>
+    <marker id="arwa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f4e79"></path>
+    </marker>
+    <marker id="arwg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9aa5b1"></path>
+    </marker>
+    <marker id="tk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 5 1 L 5 9" stroke="#666666" stroke-width="1.2"></path>
+    </marker>
+  </defs>
+
+  <rect class="box" x="300" y="60" width="350" height="270" rx="3"></rect>
+  <text class="tb" x="318" y="88">Ordinador de treball</text>
+  <text class="s"  x="318" y="110">Windows</text>
+  <rect class="boxg" x="318" y="124" width="314" height="58" rx="3"></rect>
+  <text class="tb" x="334" y="150">Momentics IDE</text>
+  <text class="s"  x="334" y="172">compilació creuada amb el QNX SDP</text>
+  <rect class="boxa" x="318" y="196" width="314" height="118" rx="3"></rect>
+  <text class="tb" x="334" y="222">Màquina virtual VMware</text>
+  <text class="s"  x="334" y="244">QNX Neutrino</text>
+  <text class="m"  x="334" y="270">apibasica1.c + aplicació</text>
+  <text class="s"  x="334" y="292">client TCP</text>
+  <text class="s"  x="334" y="308">gestor de cues mqueue · agent qconn</text>
+
+  <rect class="box" x="740" y="60" width="350" height="270" rx="3"></rect>
+  <text class="tb" x="758" y="88">Robot QBot Platform</text>
+  <text class="s"  x="758" y="110">NVIDIA Jetson Orin Nano · Ubuntu</text>
+  <rect class="boxg" x="758" y="124" width="314" height="84" rx="3"></rect>
+  <text class="m"  x="774" y="150">qbot_platform_driver_physical</text>
+  <text class="s"  x="774" y="172">servidor de dades</text>
+  <text class="s"  x="774" y="194">port TCP 18888</text>
+  <line class="ln" x1="915" y1="208" x2="915" y2="238"></line>
+  <rect class="boxg" x="758" y="238" width="314" height="76" rx="3"></rect>
+  <text class="tb" x="774" y="264">LSLiDAR M10P</text>
+  <text class="m"  x="774" y="288">/dev/lidar</text>
+  <text class="s"  x="774" y="308">port sèrie del Jetson</text>
+
+  <path class="lna" d="M 475 330 L 475 452 L 915 452 L 915 330"></path>
+  <text class="s ac" x="495" y="426">xarxa sense fil Quanser_UVS</text>
+  <text class="s ac" x="495" y="446">TCP 192.168.2.16:18888</text>
+</svg>

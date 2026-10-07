@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1010 740" width="1010" height="740">
+  <style>
+
+  text { font-family: Arial, Helvetica, sans-serif; fill: #1a1a1a; }
+  .tb { font-size: 17px; font-weight: bold; }
+  .s  { font-size: 15px; fill: #4a4a4a; }
+  .xs { font-size: 13px; fill: #4a4a4a; }
+  .m  { font-family: "Courier New", Courier, monospace; font-size: 15px; }
+  .mb { font-family: "Courier New", Courier, monospace; font-size: 17px; font-weight: bold; }
+  .ms { font-family: "Courier New", Courier, monospace; font-size: 14px; }
+  .ac { fill: #1f4e79; }
+  .num { font-size: 26px; font-weight: bold; fill: #1f4e79; }
+  .box  { fill: #ffffff; stroke: #333333; stroke-width: 1.4; }
+  .boxa { fill: #eaf0f6; stroke: #1f4e79; stroke-width: 1.4; }
+  .boxg { fill: #f4f4f4; stroke: #333333; stroke-width: 1.4; }
+  .reg  { fill: none; stroke: #9aa5b1; stroke-width: 1.2; stroke-dasharray: 6 5; }
+  .ln   { stroke: #333333; stroke-width: 1.4; fill: none; }
+  .lna  { stroke: #1f4e79; stroke-width: 2.2; fill: none; }
+  .lnd  { stroke: #9aa5b1; stroke-width: 1.1; fill: none; stroke-dasharray: 5 5; }
+  .thin { stroke: #666666; stroke-width: 1; fill: none; }
+  </style>
+  <rect x="0" y="0" width="1010" height="740" fill="#ffffff"></rect>
+  <defs>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333333"></path>
+    </marker>
+    <marker id="arwa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f4e79"></path>
+    </marker>
+    <marker id="arwg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9aa5b1"></path>
+    </marker>
+    <marker id="tk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 5 1 L 5 9" stroke="#666666" stroke-width="1.2"></path>
+    </marker>
+  </defs>
+
+  <rect class="box" x="40" y="26" width="140" height="58" rx="3"></rect>
+  <text class="tb" x="110" y="52" text-anchor="middle">Robot</text>
+  <text class="s"  x="110" y="72" text-anchor="middle">controlador</text>
+  <rect class="box" x="220" y="26" width="160" height="58" rx="3"></rect>
+  <text class="tb" x="300" y="52" text-anchor="middle">Biblioteca</text>
+  <text class="s"  x="300" y="72" text-anchor="middle">fil intern, prioritat 50</text>
+  <rect class="box" x="415" y="26" width="150" height="58" rx="3"></rect>
+  <text class="tb" x="490" y="52" text-anchor="middle">Monitor</text>
+  <text class="s"  x="490" y="72" text-anchor="middle">prioritat 15, 50 ms</text>
+  <rect class="box" x="595" y="26" width="150" height="58" rx="3"></rect>
+  <text class="mb" x="670" y="52" text-anchor="middle">/cua_qbot</text>
+  <text class="s"  x="670" y="72" text-anchor="middle">cua POSIX</text>
+  <rect class="box" x="785" y="26" width="170" height="58" rx="3"></rect>
+  <text class="tb" x="870" y="52" text-anchor="middle">Supervisor</text>
+  <text class="s"  x="870" y="72" text-anchor="middle">prioritat 25</text>
+
+  <line class="lnd" x1="110" y1="84" x2="110" y2="700"></line>
+  <line class="lnd" x1="300" y1="84" x2="300" y2="700"></line>
+  <line class="lnd" x1="490" y1="84" x2="490" y2="700"></line>
+  <line class="lnd" x1="670" y1="84" x2="670" y2="700"></line>
+  <line class="lnd" x1="870" y1="84" x2="870" y2="700"></line>
+
+  <path class="ln" d="M 112 130 L 296 130" marker-end="url(#arw)"></path>
+  <text class="s" x="204" y="118" text-anchor="middle">trama de 17 valors</text>
+
+  <path class="ln" d="M 488 180 L 304 180" marker-end="url(#arw)"></path>
+  <text class="m" x="396" y="168" text-anchor="middle">getOdometry()</text>
+  <path class="lnd" d="M 302 215 L 486 215" marker-end="url(#arwg)"></path>
+  <text class="s" x="394" y="234" text-anchor="middle">pose actual</text>
+
+  <path class="ln" d="M 490 258 L 546 258 L 546 288 L 494 288" marker-end="url(#arw)"></path>
+  <text class="s" x="556" y="276">angle girat des de refOdo &#8805; objectiu</text>
+
+  <path class="ln" d="M 490 313 L 546 313 L 546 343 L 494 343" marker-end="url(#arw)"></path>
+  <text class="m" x="556" y="325">modeMON = MON_OFF</text>
+  <text class="s" x="556" y="345">es desarma abans d'enviar</text>
+
+  <path class="ln" d="M 492 385 L 666 385" marker-end="url(#arw)"></path>
+  <text class="m" x="580" y="373" text-anchor="middle">mq_send(EV_FI_GIR)</text>
+
+  <path class="ln" d="M 674 430 L 866 430" marker-end="url(#arw)"></path>
+  <text class="m" x="771" y="418" text-anchor="middle">mq_receive()</text>
+
+  <path class="ln" d="M 870 468 L 926 468 L 926 498 L 874 498" marker-end="url(#arw)"></path>
+  <text class="s" x="858" y="486" text-anchor="end">switch: ORIENT_ENTRADA &#8594; AVOID</text>
+
+  <path class="ln" d="M 866 540 L 494 540" marker-end="url(#arw)"></path>
+  <text class="s" x="680" y="528" text-anchor="middle">arma el tram nou, sota el mutex clau</text>
+  <text class="m" x="680" y="560" text-anchor="middle">modeMON · refOdo · objectiu</text>
+
+  <path class="ln" d="M 866 600 L 304 600" marker-end="url(#arw)"></path>
+  <text class="m" x="585" y="588" text-anchor="middle">setRobotVelocity(0,22 · −0,367)</text>
+
+  <path class="ln" d="M 298 650 L 114 650" marker-end="url(#arw)"></path>
+  <text class="s" x="206" y="638" text-anchor="middle">la consigna surt a la trama següent</text>
+
+  <rect class="boxa" x="104" y="660" width="12" height="50"></rect>
+  <text class="s"  x="160" y="680">retard de l'actuador</text>
+  <text class="ms" x="160" y="700">T_LATENCIA = 0,25 s</text>
+</svg>
