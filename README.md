@@ -73,3 +73,7 @@ not see obstacles lower than that plane.
 
 The starting point is the QBot example code provided by Roberto at the UPC lab; this repository is the API,
 threading model, LiDAR integration and applications built from it. Published with permission.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
